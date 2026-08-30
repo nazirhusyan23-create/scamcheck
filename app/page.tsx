@@ -30,7 +30,7 @@ const popularTools = [
 ];
 
 export default function HomePage() {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.example-scamcheck.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://scamcheck-nu-flame.vercel.app";
   return (
     <div>
       <JsonLd
