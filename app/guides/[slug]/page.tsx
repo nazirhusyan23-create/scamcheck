@@ -39,7 +39,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
   const guide = getGuide(slug);
   if (!guide) notFound();
 
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.example-scamcheck.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://scamcheck-nu-flame.vercel.app";
   const html = marked.parse(guide.content, { async: false }) as string;
 
   return (
