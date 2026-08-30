@@ -16,7 +16,8 @@ export default function AdSlot({
   placement: "header" | "in-content" | "sidebar" | "footer";
   className?: string;
 }) {
-  const adsenseClientId = process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID;
+  const adsenseClientId =
+    process.env.NEXT_PUBLIC_ADSENSE_CLIENT_ID || "ca-pub-2006445566626425";
 
   if (!adsenseClientId) {
     // No ad network configured yet: render an empty, unobtrusive reserved

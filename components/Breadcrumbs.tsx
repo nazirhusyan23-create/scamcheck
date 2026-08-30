@@ -7,7 +7,7 @@ export interface Crumb {
 }
 
 export default function Breadcrumbs({ items }: { items: Crumb[] }) {
-  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.example-scamcheck.com";
+  const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://scamcheck-nu-flame.vercel.app";
   return (
     <nav aria-label="Breadcrumb" className="mx-auto max-w-6xl px-4 pt-4 text-xs text-slate-500">
       <JsonLd
